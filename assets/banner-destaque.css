@@ -1,0 +1,76 @@
+.banner-destaque {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: relative;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.imagem-banner-destaque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), transparent), url('../img/banner1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.banner-destaque .banner-destaque-content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-destaque .banner-destaque-content .logo-filme-destaque img {
+    width: 500px;
+}
+
+.banner-destaque .banner-destaque-content .descricao-filme {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.banner-destaque .banner-destaque-content .banner-destaque-botoes {
+    display: flex;
+    gap: 16px;
+}
+
+.banner-destaque .banner-destaque-content .banner-destaque-botoes .botao-banner-destaque {
+    font-size: 1rem;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+
+
+    &.mais-informacoes {
+        width: 55%;
+        background-color: #3b3b3b62;
+        color: #ffffff;
+        border: none;
+
+        & svg {
+            margin-right: 7px;
+        }
+    }
+
+    &.assistir {
+        width: 30%;
+
+
+    }
+
+
+
+}
